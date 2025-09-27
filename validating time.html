@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function validateTime(thisform)
+        {
+            var txtTime= thisform.time.value;
+            if(txtTime=="")
+        {alert("Please enter the time");
+         thisform.time.focus();
+         return false;
+        }
+        var pos=txtTime.indexOf(":");
+        if(pos<0)
+        {alert("Please enter :");
+         thisform.time.focus();
+         return false;
+        }
+        if (pos>2)
+        {alert("Invalid Time!");
+            thisform.time.focus();
+            return false;
+        }
+        if(pos<1)
+        {alert("Invalid Time");
+            thisform.time.focus();
+            return false;
+        }
+        var hours=txtTime.substring(0,pos);
+        if(hours>12)
+        {alert("Invalid Time");
+            thisform.time.focus();
+            return false;
+        }
+        if(hours<=0)
+        {alert("Invalid Time");
+            thisform.time.focus();
+            return false;
+        }
+        var min=txtTime.substring(pos+1, pos+3);
+        if(min>59)
+        {alert("Invalid Time");
+            thisform.time.focus();
+            return false;
+        }
+        if(min<0)
+        {alert("Invalid Time");
+            thisform.time.focus();
+            return false;
+        }
+        var t1=txtTime.substring(5,8);
+        if(t1!= "AM" && t1!="am" && t1!="PM" && t1!="pm")
+        {alert("Invalid Time");
+            thisform.time.focus();
+            return false;
+        }
+        return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="validTime.html" onsubmit="return validateTime(this)" method="post">
+        Enter Time(HH:MM AM/PM):<input type="text" name="time"/><br/>
+        <input type="submit" value="submit"/>
+    </form>
+</body>
+</html>

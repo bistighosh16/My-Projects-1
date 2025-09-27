@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form">
+        <h1 id="title">REGISTRATION</h1>
+        <fieldset class="width">
+            <label id="name-label">Name <input class="width" id="name" type="name" placeholder="Enter your name" required></label>
+           
+            <label id="email-label">Email <input class="width" id="email" type="email" placeholder="Enter your email" required></label>
+             <label id="cntent-label">Content <input class="width" id="content" type="name" placeholder="Write something..." required></label>
+            <fieldset class="width">
+                <fieldset class="width">
+                    <legend>
+                      Gender!</legend>
+                    <label for="Male"><input type="radio" value="Male" name="personal" class="inline width" checked> Male </label>
+                    <label for="Female"><input type="radio" value="Female" name="personal" class="inline width"> Female </label>
+                        
+                  </fieldset>
+                  <hr class="width">
+                <label>
+                  <legend>Course Interect</legend>
+                  <select id="dropdown" class="width" required>
+                    <option value="1">(choose one)</option>
+                    <option value="2">MCA</option>
+                    <option value="3">BCA</option>
+                    <option value="4">B.Tech</option>
+                    <option value="5">M.Tech</option>
+                  </select>
+                </label>
+            </fieldset>
+            
+        <label class="label1">
+          <input name="recommandation" type="checkbox" value="C" class="radio" class='label1' checked>C</label><br>
+        <label class='label2'>
+          <input name="recommandation" type="checkbox" value="JAVA" class="radio" class='label1'>JAVA</label><br>
+        <label class='label3'>
+          <input name="recommandation" type="checkbox" value="Web" class="radio" class='label1'>Web</label><br>
+            
+            <label class="label6">
+              <input name="recommandation" type="checkbox" value="C" class="radio" class='label6' checked>Animation</label><br>
+              <label class="label7">
+                <input name="recommandation" type="checkbox" value="C" class="radio" class='label7' checked>Programming</label><br>
+                <label class="label8">
+                  <input name="recommandation" type="checkbox" value="C" class="radio" class='label8' checked>Tally</label><br>
+                  <label class="label9">
+                    <input name="recommandation" type="checkbox" value="C" class="radio" class='label9' checked>Networking</label><br>
+                    <label class="label10">
+                      <input name="recommandation" type="checkbox" value="C" class="radio" class='label10' checked>Digital Marketing</label><br>
+                      <hr class="width">
+            <label class="label4">
+              <input name="recommandation" type="file" value="Enter your CV" class="radio" class='label4' checked>Enter your cv</label>
+             <form action="/action_page.php">
+                <label for="label5">
+                <textarea id="label5" name="label5" rows="4" cols="50"></textarea></label>
+                <br>
+                
+              </form>
+              
+             
+              
+            <button id="submit" type="submit" class="width">Submit</button></div>

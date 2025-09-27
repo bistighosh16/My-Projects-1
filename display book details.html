@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+const title = "The Great Gatsby";
+const author = "F. Scott Fitzgerald";
+const price = "Rs. 500";
+
+function displayBookDetails() {
+    const totalRows = 12; 
+
+    for (let i = 0; i < totalRows; i++) {
+        let row = '';
+
+        
+        if (i === 3) {
+            row += ' '.repeat(2) + title; 
+        } else if (i === 5) {
+            row += ' '.repeat(1) + author; 
+        } else if (i === 9) {
+            row += ' '.repeat(7) + price; 
+        } else {
+            row += ' ';
+        }
+
+    document.write(row); 
+    }
+}
+
+
+displayBookDetails();
+   </script> 
+</body>
+</html>

@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/fontawesome.min.css"
+    integrity="sha512-KVdV5HNnN1f6YOANbRuNxyCnqyPICKUmQusEkyeRg4X0p8K1xCdbHs32aA7pWo6WqMZk0wAzl29cItZh8oBPYQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/brands.min.css"
+    integrity="sha512-BglNUJaVmT9HacZ2AsbVQxjswBmIf3AJj9hhXr/Yre33qU+A1p8gXUcavzcHYkWf5bIvLMIiEbdMrEVqb5h2Rg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="text-light bg-primary">
+    <div class="row">
+      <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+        <h2 class="text-center">Navbar</h2>
+      </div>
+      <div class="col-9 col-md-9 col-lg-9 col-xl-9 py-2">
+        <div class="d-none d-md-block ">
+          <ul class="d-flex justify-content-around" style="list-style: none;">
+            <li>Home</li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Login</li>
+          </ul>
+        </div>
+        <button type="button" onclick="myFunction()" id="clickBtn" class="btn btn-warning d-md-none float-end"><i
+            class="fa fa-bars"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class=" d-md-none" id="nav_menu" style="padding: 0;margin: 0;display: none;">
+    <ul class="" style="list-style: none;">
+      <li class="bg-info my-3 text-center py-2">Home</li>
+      <li class="bg-info my-3 text-center py-2">About</li>
+      <li class="bg-info my-3 text-center py-2">Gallery</li>
+      <li class="bg-info my-3 text-center py-2">Login</li>
+    </ul>
+  </div>
+  <div class="learn px-2 py-2 align-middle">
+    <h4>Learn Everything In Here</h4>
+    <p>It offers hands-on courses in coding, software, and IT skills, empowering individuals with practical tech
+      knowledge.</p>
+  </div>
+  <div class="course px-2 py-2">
+    <button type="button" class="btn btn-success" style="margin-left: 650px; ">Checkout Our Courses</button>
+  </div>
+  <div class="image">
+    <img src="4882404.jpg" alt="" style="width: 400px; height: 400px;">
+  </div>
+  <div class="col">
+    <div class="px-2 py-2" style="text-align: center;">
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="container-fluid">
+      ...
+    </div>
+  </div>
+
+
+  <div class="card-container bg-black shadow-lg rounded " id="team" style="margin: 30px;">
+    <div class="container-fluid px-4 py-4">
+      <div class="row center mx-4 my-4 text-white">
+        <h2>Meet Our Expert</h2>
+        <p>Highly professional team</p>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <div class="card">
+            <img src="iqbb_uq4h_220224.jpg" class="card-img-top" style="height:300px; " alt="">
+            <div class="card-body">
+              <h5 class="card-title">ABC</h5>
+              <p class="card-text" style="font-weight: 500;">Highly professional in Web</p>
+              <a href="#" class="btn org-btn btn-dark">Learn More.</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 100%;">
+            <img src="young-man-presentation-office_24911-66885.jpg" class="card-img-top" style="height:300px; " alt="">
+            <div class="card-body">
+              <h5 class="card-title">XYZ</h5>
+              <p class="card-text" style="font-weight: 500;">A professional web designer </p>
+              <a href="#" class="btn org-btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="flat-time-management-concept_23-2148820993.jpg" class="card-img-top rounded" style="height:300px;"
+              alt="Image">
+            <div class="card-body">
+              <h5 class="card-title">PQR</h5>
+              <p class="card-text" style="font-weight: 500;">Expert in all aspects of coding</p>
+              <a href="#" class="btn org-btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="testimonals-container mt-4 mb-4" id="testi">
+    <div class="container-fluid">
+      <div class="row center mx-4 my-4">
+        <h2>What Peoples Say </h2>
+        <p>Read our Reviews</p>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="card-group">
+              <div class="card">
+                <img src="man-with-brown-eyes-red-background-that-says-hes-man_1230457-37458.jpg"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 50px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="drawing-girl-with-pink-hair-white-shirt-with-picture-girl-with-pink-hair_1230457-11023.avif"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 40px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="man-with-red-shirt-that-says-he-is-character_1230457-33827.jpg"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 40px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="card-group">
+              <div class="card">
+                <img src="drawing-woman-with-blue-hair-yellow-background_1230457-11170.jpg"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 40px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="man-with-brown-eyes-red-background-that-says-hes-man_1230457-37458.jpg"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 40px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="drawing-girl-with-pink-hair-white-shirt-with-picture-girl-with-pink-hair_1230457-11023.avif"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 40px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="card-group">
+              <div class="card">
+                <img src="man-with-red-shirt-that-says-he-is-character_1230457-33827.jpg"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 40px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="drawing-woman-with-blue-hair-yellow-background_1230457-11170.jpg"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 40px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="drawing-girl-with-pink-hair-white-shirt-with-picture-girl-with-pink-hair_1230457-11023.avif"
+                  class="card-img-top rounded-circle" alt="..."
+                  style="height: 300px; width: 300px; margin-left: 40px; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Exceptional training center with knowledgeable instructors, practical courses,
+                    and supportive environment—ideal for mastering new tech skills.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div class="banner-container mt-5 mb-5" id="featured">
+    <div class="container-fluid px-4 py-4">
+      <div class="card bg-black text-white shadow-lg ">
+        <h5 class="card-header">Featured Courses</h5>
+        <div class="card-body">
+
+<!-- tooltip -->
+          <div class="conatiner"  data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+            <div class="row d-flex justify-content-around">
+              <div class="col">
+                <div class="card text-black mb-3">
+                  <div class="card-header">Web Development</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Front End + Backend</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-black mb-3">
+                  <div class="card-header">Web3.0</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Web3 and Tools</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-black mb-3">
+                  <div class="card-header">Java Masterclass</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Begineer Course</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-black mb-3">
+                  <div class="card-header">Python </div>
+                  <div class="card-body" id="python">
+                    <h5 class="card-title">Python AI</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+   <div class="container">
+    <div class="col-lg-12 col-md-12 col-xl-12 col-12">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6 bg-dark p-5">
+          <div class="map"> 
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14615.361742460003!2d86.981018!3d23.6816636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71ed4939f290f%3A0x3ab79e75db6fdebe!2sRB%20Web%20Solutions!5e0!3m2!1sen!2sin!4v1725678824432!5m2!1sen!2sin"
+              width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6 bg-dark">
+          <div class="row">
+            <div class="col-md-4 footer-column">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <span class="footer-title" style="font-size: 15px;">Product</span>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-size: 15px;">Product 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-size: 15px;">Product 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-size: 15px;">Plans & Prices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-size: 15px;">Frequently asked questions</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 footer-column">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <span class="footer-title" style="font-size: 15px;">Company</span>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-size: 15px;">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-size: 15px;">Job postings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-size: 15px;">News and articles</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 footer-column">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <span class="footer-title">Contact & Support</span>
+                </li>
+                <li class="nav-item">
+                  <span class="nav-link" style="font-size: 15px;"><i class="fas fa-phone"></i>&nbsp;+47 40 82 94 72<span>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: 15px;" href="#"><i class="fas fa-comments"></i>&nbsp;Live chat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: 15px;" href="#"><i class="fas fa-envelope"></i>&nbsp;Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: 15px;" href="#"><i class="fas fa-star"></i>&nbsp;Give feedback</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- copyright -->
+    <div class="container-fluid bg-dark py-5 mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-xl-6 text-end">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-6">
+            <ul class="list-inline quick-links">
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+   
+   
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+              crossorigin="anonymous"></script>
+    
+            <script>
+              function myFunction() {
+                var x = document.getElementById("nav_menu");
+                if (x.style.display === "none") {
+                  x.style.display = "block";
+                } else {
+                  x.style.display = "none";
+                }
+              }
+            </script>
+</body>
+
+</html>

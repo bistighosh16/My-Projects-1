@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  
+  text-align: center;
+
+}
+th{
+    background-color: rgb(87, 90, 126);
+    color: whitesmoke;
+    font-size: 20px;
+}
+#First{
+    background-color: rgb(190, 188, 219);
+    color: rgb(48, 48, 82);
+    font-size: 20px;
+    font-weight: 700;
+}
+#Second{
+    background-color: rgb(150, 148, 175);
+    color: rgb(48, 48, 82);
+    font-size: 20px;
+    font-weight: 700;
+}
+#Third{
+    background-color: rgb(190, 188, 219);
+    color: rgb(48, 48, 82);
+    font-size: 20px;
+    font-weight: 700;
+}
+#Fourth{
+    background-color: rgb(150, 148, 175);
+    color: rgb(48, 48, 82);
+    font-size: 20px;
+    font-weight: 700;
+}
+#Fifth{
+    
+    background-color: rgb(190, 188, 219);
+    color: rgb(48, 48, 82);
+    font-size: 20px;
+    font-weight: 700;
+}
+p{
+    font-size: 50px;
+    margin-left: 500px;
+    color:  rgb(48, 48, 82);
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
+
+
+</style>
+<body>
+<p>Marksheet</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Chemistry</th>
+    <th>Mathematics</th>
+    <th>Physics</th>
+    <th>Biology</th>
+    <th>Total Marks</th>
+    <th>Obtained Marks <br>(In Percentage)</th>
+  </tr>
+  <tr id="First">
+    <td>78</td>
+    <td>95</td>
+    <td>86</td>
+    <td>57</td>
+    <td>400</td>
+    <td id="percentage1"></td>
+  </tr>
+  <tr id="Second">
+    <td>67</td>
+    <td>79</td>
+    <td>92</td>
+    <td>83</td>
+    <td>400</td>
+    <td id="percentage2"></td>
+  </tr>
+  <tr id="Third">
+    <td>91</td>
+    <td>87</td>
+    <td>63</td>
+    <td>55</td>
+    <td>400</td>
+    <td id="percentage3"></td>
+  </tr>
+  <tr id="Fourth">
+    <td>76</td>
+    <td>90</td>
+    <td>81</td>
+    <td>72</td>
+    <td>400</td>
+    <td id="percentage4"></td>
+  </tr>
+  <tr id="Fifth">
+    <td>84</td>
+    <td>99</td>
+    <td>100</td>
+    <td>97</td>
+    <td>400</td>
+    <td id="percentage5"></td>
+  </tr>
+ 
+  <script id="number1">
+  let num1 = 316;
+ let totalSum = 400;
+   let percentage1 = (num1 / totalSum) * 100;
+  console.log(`Number 1: ${num1}, Percentage: ${percentage1.toFixed(2)}%`);
+  document.getElementById('percentage1').textContent = percentage1 + '%';
+  </script>
+<script id="number2">
+    let number2 = 321;
+    
+    
+    let total2 = 400;
+    
+    let percentage2 = (number2 / total2) * 100;
+    
+    
+    console.log(`Percentage of ${number2} out of ${total2}: ${percentage2}%`);
+    document.getElementById('percentage2').textContent = percentage2 + '%';
+    </script>
+
+<script id="number3">
+    let number3 = 296;
+    
+    
+    let total3 = 400;
+    
+    let percentage3 = (number3 / total3) * 100;
+    
+    
+    console.log(`Percentage of ${number3} out of ${total3}: ${percentage3}%`);
+    document.getElementById('percentage3').textContent = percentage3 + '%';
+    </script>
+    <script id="number4">
+        let number4 = 319;
+        
+        
+        let total4 = 400;
+        
+        let percentage4 = (number4 / total4) * 100;
+        
+        
+        console.log(`Percentage of ${number4} out of ${total4}: ${percentage4}%`);
+        document.getElementById('percentage4').textContent = percentage4 + '%';
+        
+        </script>
+         <script id="number5">
+            let number5 = 380;
+            
+            
+            let total5 = 400;
+            
+            let percentage5 = (number5 / total5) * 100;
+            
+            
+            console.log(`Percentage of ${number5} out of ${total5}: ${percentage5}%`);
+            document.getElementById('percentage5').textContent = percentage5 + '%';
+            
+            </script>
+  </table>
+ </body>
+</html>
+  
+
+ 
+ 
+
+
+
+
+
+

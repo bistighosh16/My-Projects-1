@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertCurrency(amountInRupees) {
+    const usdRate = 71.28; // 1 USD = 71.28 INR
+    const audRate = 47.79; // 1 AUD = 47.79 INR
+
+    // Convert to USD and AUD
+    let amountInUSD = amountInRupees / usdRate;
+    let amountInAUD = amountInRupees / audRate;
+
+    // Round to two decimal places
+    amountInUSD = amountInUSD.toFixed(2);
+    amountInAUD = amountInAUD.toFixed(2);
+
+    // Display results
+    document.write(amountInRupees + " INR is approximately:");
+    document.write(amountInUSD + " USD (US Dollars)");
+    document.write(amountInAUD + " AUD (Australian Dollars)");
+}
+
+// Example usage:
+let amountInRupees = 5000; // Replace with any amount in INR
+
+convertCurrency(amountInRupees);
+    </script>
+</body>
+</html>

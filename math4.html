@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const monthlySalary = 65000; 
+const savingsPercentage = 60;
+const savingsAmount = (savingsPercentage / 100) * monthlySalary;
+
+
+const expenditureAmount = monthlySalary - savingsAmount;
+
+
+document.write("Monthly Salary: Rs.", monthlySalary);
+document.write("Savings Amount: Rs.", savingsAmount.toFixed(2));
+document.write("Expenditure Amount: Rs.", expenditureAmount.toFixed(2));
+    </script>
+</body>
+</html>

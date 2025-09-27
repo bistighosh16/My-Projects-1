@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 1000px;
+            width: 800px;
+            background-color: blue;
+            margin: auto;
+        }
+        .container .box1{
+            height: 400px;
+            width: 400px;
+            /* background: red; */
+            float: left;
+        }
+        .container .box2{
+            height: 400px;
+            width: 400px;
+            background-color: brown;
+            float: right;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+       .box1 .mini1{
+        height: 200px;
+        width: 200px;
+        background: blueviolet;
+        float: left;
+       }
+       .box1 .mini2{
+        height: 400px;
+        width: 200px;
+        background: yellow;
+        float: right;
+       }
+       .box1 .mini3{
+        height: 200px;
+        width: 200px;
+        background: red;
+        float: left;
+       }
+       .box2 .div1{
+        width: 300px;
+        height: 300px;
+        background: blue;
+       } 
+       .box2 .div1 .minidiv1{
+        width: 150px;
+        height: 150px;
+        background: green;
+       }
+       .box2 .div1 .minidiv2{
+        width: 150px;
+        height: 150px;
+        background: lightseagreen;
+       }
+       .container .box3{
+        height: 600px;
+        width: 400px;
+        background-color: coral;
+        float: left;
+       }
+       .container .box4{
+        height: 600px;
+        width: 400px;
+        background-color: cornflowerblue;
+        float: right;
+       }
+       .box3 .minibox1{
+        height: 200px;
+        width: 400px;
+        background-color: goldenrod;
+       }
+       .box3 .minibox2{
+        width: 200px;
+        height: 200px;
+        background: lightseagreen;
+        float: left;
+       }
+       
+       .box3 .minibox4{
+        width: 200px;
+        height: 400px;
+        background: orange;
+        float: right;
+       }
+       .box4 .sub1{
+        height: 600px;
+        width: 200px;
+        
+        background: maroon;
+       }
+      .box4 .sub2{
+        height: 200px;
+        width: 200px;
+        background-color: magenta;
+        float: right;
+        position: absolute;
+        top: 408px;
+        left: 875px;
+      }
+      
+
+
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <div class="box1">
+            <div class="mini1"></div>
+            <div class="mini2"></div>
+            <div class="mini3"></div>
+        </div>
+        <div class="box2">
+            <div class="div1">
+                <div class="minidiv1"></div>
+                <div class="minidiv2"></div>
+                <div class="minidiv3"></div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="minibox1"></div>
+            <div class="minibox2"></div>
+            <div class="minibox3"></div>
+            <div class="minibox4"></div>
+        </div>
+        <div class="box4">
+            <div class="sub1"></div>
+            <div class="sub2"></div>
+            <div class="sub3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

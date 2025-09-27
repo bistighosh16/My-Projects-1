@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>onFocus - 01 jsdemo09d.htm</title>
+<script language="JavaScript">
+<!--
+function processa1() 
+{
+d= eval(document.calculus.Field1.value) +
+     eval(document.calculus.Field2.value)+
+     eval(document.calculus.Field3.value)
+document.calculus.Field4.value=d
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<form name="calculus" >
+<h2>Using onFocus to execute calculations and messages</h2>
+Field1....:<input type="text" name="Field1" value="" size=10 maxlength=10  onBlur='if(this.value=="") {this.value=0}' >
+<br>Firld2.....:<input type="text" name="Field2" value="" size=10 onBlur='if(this.value=="") {this.value=0}' >
+<br>Field3.....:<input type="text" name="Field3" value="" size=10 onBlur='if(this.value=="") {this.value=0}'>
+<br>Result...:<input type="text" name="Field4" value="" size=10 onFocus="processa1()">
+<br>Comments...:<input type="text" name="Field5" value="" size=30 
+		onFocus="alert('This comments field should be filled in')">
+
+</center>
+</form>
+</body>
+</html>

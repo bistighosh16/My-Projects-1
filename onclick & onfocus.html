@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of Fixed Numbers</title></head>
+    <body>
+        <script>
+        function addFixedNumbers() {
+            const num1 = 5;
+            const num2 = 7;
+            const sum = num1 + num2;
+
+            
+            document.getElementById('result').textContent = 'The result of ' + num1 + ' + ' + num2 + ' is: ' + sum;
+        }
+
+        
+        function onFocusAddNumbers() {
+            addFixedNumbers();
+        }
+    </script>
+
+
+    <h1>Addition of Fixed Numbers</h1>
+
+    
+    <button onclick="addFixedNumbers()">Calculate 5 + 7</button>
+
+    
+    <input type="text" onfocus="onFocusAddNumbers()" placeholder="Focus here to see the result">
+
+    
+    <p id="result"></p>
+</body>
+</html>

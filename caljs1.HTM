@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>onClick - 03</title>
+<script language="JavaScript">
+<!--
+function processa1() 
+{
+d= eval(document.calculus.Field1.value) +
+     eval(document.calculus.Field2.value)+
+     eval(document.calculus.Field3.value)
+document.calculus.Field4.value=d
+}
+function processa2() 
+{
+d= eval(document.calculus.Field1.value) *
+     eval(document.calculus.Field2.value) *
+     eval(document.calculus.Field3.value)
+document.calculus.Field4.value=d
+}
+
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<form name="calculus" >
+<h2>Using onClick to change the content of other fields</h2>
+Field1....:<input type="text" name="Field1" value="" size=10 maxlength=10 >
+Field2......:<input type="text" name="Field2" value="" size=10 maxlength=10 >
+Field3.....:<input type="text" name="Field3" value="" size=10 maxlength=10>
+<hr>
+<center>
+<input type="button" value="Sum"  onclick="processa1()">
+<input type="button" value="Multiply"  onclick="processa2()">
+<hr>
+Result...:<input type="text" name="Field4" value="" size=10 maxlength=0>
+</center>
+</form>
+
+
+
+</body>
+</html>

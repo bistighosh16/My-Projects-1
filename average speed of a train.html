@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateAverageSpeed(distance, time) {
+    
+    if (time >= 60) { 
+        time /= 60; 
+    } else if (time < 1) { 
+        time /= 3600; 
+    }
+
+    
+    let speed = distance / time;
+
+    return speed;
+}
+
+
+let distance = 300; 
+let time = 2.5; 
+
+let averageSpeed = calculateAverageSpeed(distance, time);
+
+document.write("Average speed of the train:", averageSpeed.toFixed(2), "km/h");
+    </script>
+</body>
+</html>

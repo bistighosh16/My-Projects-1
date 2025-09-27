@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>jsexemp04 - Clock </title>
+<script language="JavaScript">
+<!-- Hide the script from old browsers --
+
+// Michael P. Scholtis (mpscho@planetx.bloomu.edu)
+// All rights reserved.  December 22, 1995
+// You may use this JavaScript example as you see fit, as long as the
+// information within this comment above is included in your script.
+  
+
+var timerID = null;
+var timerRunning = false;
+var id,pause=0,position=0;
+
+function stopclock (){
+        if(timerRunning)
+                clearTimeout(timerID);
+        timerRunning = false;
+}
+
+function showtime () {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds()
+        var timeValue = "" + ((hours >12) ? hours -12 :hours)
+        timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+        timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+        timeValue += (hours >= 12) ? " P.M." : " A.M."
+        document.clock.face.value = timeValue;
+        timerID = setTimeout("showtime()",1000);
+        timerRunning = true;
+}
+
+function startclock () {
+        stopclock();
+        showtime();
+}
+// --End Hiding Here -->
+</script>
+</head>
+<body onLoad="startclock()">
+<center><h1>CLOCK</h1>
+<hr>
+<form name="clock" onSubmit="0">
+<input type="text" name="face" size=13 value="">
+</form>
+<hr>
+</center>
+</body>
+<//html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+    body {
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 500;
+        color:#fff;
+        background-color:  #1b1b32;;
+      }
+      
+      h1 {
+        text-align:center; 
+        color:plum;
+        text-shadow: 1px 1px 0px #FFF;
+        margin:50px 0px 0px 0px
+      }
+      
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      h3 {
+        font-size: 17px;
+        font-weight: 600;
+      }
+      
+       a {
+        text-decoration: inherit;
+        color: inherit;
+      }
+      
+      a:hover {
+        text-decoration: inherit;
+      }
+       
+     
+      
+       .container {
+        display: block;
+        position: relative;
+        width: 500px;
+        height: 650px;
+        margin: auto;
+        margin-top: 180px; 
+        box-shadow: 5px 5px 10px 10px #6c6c81;
+        overflow:hidden;
+      } 
+      
+      img.bg-img {
+         display: block; 
+        position: absolute;
+        margin: auto;
+        opacity: 0.7;
+      }
+      
+      .menu {
+        position: relative;
+        padding: 15% 13% 0 13%;
+      }
+      
+      .sign-in {
+        display: inline;
+        margin: 20px;
+        padding-bottom: 3px;
+        border-bottom: 3px solid palevioletred;
+      }
+     .sign-up{
+        display: inline;
+        margin: 20px;
+        padding-bottom: 3px;
+     }
+      
+      .form {
+          position: absolute;
+          padding: 15% 13%;
+          width: 74%;
+          left:0px;
+       
+      }
+      
+     
+      
+      .form h4 {
+          margin-bottom: 0;
+          text-align: center;
+          color: #ffffff;
+          opacity: 0.5;
+      }
+      
+      .form h4:hover {
+          opacity: 2;
+          transition: all 0.1s ease-in;
+      }
+      
+       label {
+          display: block; 
+          margin-top: 10px;
+          padding: 5px 10px;
+          font-size: 15px;
+          font-weight: 600;
+          color: #fff;
+      } 
+      
+      input {
+           display: block; 
+          width: 93%;
+          margin: auto;
+          padding: 13px;
+          border: 0;
+          border-radius: 20px;
+          font-family: "Roboto",sans-serif;
+          opacity: 0.6;
+      }
+      
+      input p {
+          color: #fff;
+          opacity: 1;
+      }
+      
+      input.submit {
+          width: 100%;
+          padding: 10px;
+          font-size: 17px;
+          font-weight: 700;
+          color: #fff;
+          opacity: 1;
+          background-color: palevioletred;
+          cursor: pointer;
+      }
+      
+      .check label {
+          float: left;
+          width: 10%;
+          margin-left: 5%;
+      }
+      
+      .check h3 {
+          padding: 15px;
+      }
+      
+      .checkbox {
+          display: none;
+      }
+      
+      .checkbox:checked + svg .path-moving {
+          -webkit-transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s cubic-bezier(.3,.8,.6,1.5);
+          transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s cubic-bezier(.3,.8,.6,1.5);
+          stroke-dasharray: 25 90;
+          stroke-dashoffset: 0;
+      }
+      
+      .path-moving,
+      .path-back {
+          fill: none;
+          stroke:palevioletred;
+          stroke-width: 3px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+      }
+      
+      .path-moving {
+          -webkit-transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s;
+          transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s;
+          stroke: #ffffff;
+          stroke-dasharray: 110;
+          stroke-dashoffset: -32;
+      }
+     
+      </style> 
+</head>
+
+<body> 
+    <h1>LOGIN & REGISTRATION FORM</h1>
+        
+      
+    <div class="content">
+        <div class="container">
+            <img class="bg-img" src="Image/modern-tokyo-street-background.jpg" alt="Image" width="500px">
+                <div class="menu">
+                    <a href="#" class="sign-in"><h2 class="sign-in">SIGN IN</h2></a>
+                    <a href="#" class="sign-up"><h2 class="sign-up">SIGN UP</h2></a>
+                </div>
+                <div class="form">
+                    <div class="contact-form">
+                        <label>USERNAME</label>
+                        <input placeholder="" type="text">
+                        <label>EMAIL</label>
+                        <input placeholder="" type="text">
+                        <label>PASSWORD</label>
+                        <input placeholder="" type="text">
+                        <label>CONFIRM PASSWORD</label>
+                        <input placeholder="" type="text">
+                        <div class="check">
+                            <label>				
+                                <input id="check" type="checkbox" class="checkbox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="23px">
+                                        <path class="path-back"  d="M1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                                        <path class="path-moving" d="M24.192,3.813L11.818,16.188L1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                                    </svg>
+                            </label>
+                            <h3>Keep me signed in</h3>
+                        </div>
+                        
+                       
+                    </div>
+                    
+                    <hr>
+                    <h4>Forgot password?</h4>
+                </div>
+                 </div>
+              
+                     </div>
+    
+    
+    </body>
+     </html>    
+                        
+                       
+                    
+                
+                
+       
+    
+  

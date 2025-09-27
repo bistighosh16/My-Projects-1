@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+function displayMarks(marks) {
+    const screenWidth = 30;
+    
+
+    document.write(' '.repeat(5) + 'Marks in Different Subjects');
+    document.write(' '.repeat(5) + '-----------------------');
+    
+    document.write(' '.repeat(5) + 'Math: ' + marks.math);
+    document.write(' '.repeat(5) + 'Science: ' + marks.science);
+    document.write(' '.repeat(5) + 'Computer: ' + marks.computer);
+    document.write(' '.repeat(5) + 'English: ' + marks.english);
+    document.write(' '.repeat(5) + 'Social Studies: ' + marks.social);
+}
+
+
+const marks = {
+    math: parseFloat(prompt("Enter marks in Math:")),
+    science: parseFloat(prompt("Enter marks in Science:")),
+    computer: parseFloat(prompt("Enter marks in Computer:")),
+    english: parseFloat(prompt("Enter marks in English:")),
+    social: parseFloat(prompt("Enter marks in Social Studies:")),
+};
+
+
+displayMarks(marks);
+    </script>
+</body>
+</html>

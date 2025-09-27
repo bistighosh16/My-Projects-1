@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('ENTER THE TOTAL BILL: ', (answer) => {
+  let B = parseFloat(answer);
+
+  let D; 
+  if (B < 1000) {
+    D = 2;
+  } else if (B >= 1000 && B < 5000) {
+    D = 5;
+  } else if (B >= 5000 && B < 10000) {
+    D = 8;
+  } else if (B >= 10000) {
+    D = 10;
+  }
+
+  let DA = (D / 100) * B;
+  let AMT = B - DA; 
+
+  console.log(`FINAL AMOUNT = ${AMT.toFixed(2)}`); 
+
+  rl.close();
+});
+   </script> 
+</body>
+</html>

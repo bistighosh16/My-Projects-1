@@ -1,0 +1,155 @@
+ body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1b1b32;
+  
+}
+
+h1 {
+  text-align: center;
+  color: plum;
+  text-shadow: 1px 1px 0px #FFF;
+  margin: 50px 0px 0px 0px
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: inherit;
+}
+
+
+
+.container {
+  display: block;
+  position: relative;
+  width: 500px;
+  height: 600px;
+  margin: auto;
+  margin-top: 180px;
+  box-shadow: 5px 5px 10px 10px #6c6c81;
+  overflow: hidden;
+}
+
+img.bg-img {
+  display: block;
+  position: absolute;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.menu {
+  position: relative;
+  padding: 15% 13% 0 13%;
+}
+
+.sign-in {
+  display: inline;
+  margin: 20px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid rgb(12, 165, 106);
+}
+
+.sign-up {
+  display: inline;
+  margin: 20px;
+  padding-bottom: 3px;
+}
+
+.form {
+  position: absolute;
+  padding: 15% 13%;
+  width: 74%;
+  left: 0px;
+
+}
+
+
+
+.form h4 {
+  margin-bottom: 0;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.form h4:hover {
+  opacity: 2;
+  transition: all 0.1s ease-in;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+input {
+  display: block;
+  width: 93%;
+  margin: auto;
+  padding: 13px;
+  border: 0;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.6;
+}
+
+input p {
+  color: #fff;
+  opacity: 1;
+}
+
+input.submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 1;
+  background-color: palevioletred;
+  cursor: pointer;
+}
+
+.button {
+  background-color: olivedrab;
+  color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+  top: 40px;
+  left: 80px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 6px #96b269;
+}
+
+.button:hover {
+  background-color: #6da611
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form with Embedded Map and Footer</title>
+<style>
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(99, 99, 116);
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  textarea {
+    height: 120px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .map-container {
+    flex: 1;
+    height: 600px; 
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .footer {
+    background-color: #333;
+    
+    
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    
+    left: 88px;
+    width: 80%;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    
+    <button type="submit">Submit</button>
+  </div>
+  
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.840436210261!2d86.97844307533384!3d23.681663578717448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71ed4939f290f%3A0x3ab79e75db6fdebe!2sRB%20Web%20Solutions!5e0!3m2!1sen!2sin!4v1720111689860!5m2!1sen!2sin"></iframe>" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="footer">
+  
+</div>
+
+</body>
+</html>

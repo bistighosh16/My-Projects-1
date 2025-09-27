@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function calculateValues(number) {
+    const twice = number * 2;
+    const thrice = number * 3;
+    const square = number ** 2;
+    const cube = number ** 3;
+    
+    return { twice, thrice, square, cube };
+}
+
+
+const userInput = prompt("Enter a number:");
+const number = parseFloat(userInput);
+
+
+const { twice, thrice, square, cube } = calculateValues(number);
+    </script>
+</body>
+</html>
